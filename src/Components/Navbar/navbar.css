@@ -1,0 +1,38 @@
+
+
+.navegador{
+    background-color: black;
+    height: 15vh;
+    margin-top: 0;
+
+}
+.navegador span{
+    color: white;
+    margin-left: 6px;
+    
+    
+
+
+    
+}
+
+#lista{
+    display: flex;
+    justify-content: flex-end;
+    
+
+}
+#lista button {
+    margin: 0 10px 0 10px;
+    border-radius: 33px;
+}
+#lista li{
+    color: white;
+}
+#logo {
+    height: 70px;
+    position: absolute;
+   z-index: 1;
+   margin-top: 25px;
+   margin-left: 3%;
+}
