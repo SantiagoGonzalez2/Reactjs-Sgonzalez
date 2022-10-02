@@ -27,7 +27,7 @@ const ItemListContainer =({ greeting }) => {
         <div>
             <h1>{greeting}</h1>
             
-            <itemList products={products} />
+            <Item products={products} />
             
         </div>
     )
