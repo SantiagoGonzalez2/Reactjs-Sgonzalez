@@ -1,14 +1,14 @@
 import carrito from "../../imagenes/carrito.png";
 import './Cartwidget.css';
 
-export default function Cartwidget ()
+ function Cartwidget ()
  {
     return (
         <div className="carrocontador">
             
                 <img id="carro" src={carrito} alt="carrito" />
                 <br />
-                <span>0</span>
+                <span id="contador1">0</span>
                 </div>
           
             
@@ -19,3 +19,5 @@ export default function Cartwidget ()
         
     );
  }
+
+ export default Cartwidget;
