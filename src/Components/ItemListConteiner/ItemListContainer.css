@@ -1,4 +1,12 @@
 h1{
     font-size: 100px;
-    margin-left: 23%;
+   color: white;
+    text-align: center;
+    padding-top: 4%;
+}
+
+#spinner{
+    margin-top: 4%;
+    margin-bottom: 15%;
+    color: white;
 }

@@ -1,18 +1,25 @@
 #contador{
-    margin-left: 46%;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
 }
 
 #numero {
     color: white;
-    margin-left: 55px;
+    
+    margin-top: 1%;
 }
 
 #botoncito{
     width: 60px;
-    margin-left: 4%;
+    
+    border-radius: 33px;
 }
 
 #agregar {
-    margin-top: 10px;
+    margin-top: 4px;
+    border-radius: 33px;
 
 }

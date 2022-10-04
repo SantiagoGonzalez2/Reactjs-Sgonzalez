@@ -20,7 +20,7 @@ console.log('se agrego al carrito')
     
     <div className="App">
       <Navbar/>
-      <ItemListContainer greeting={"Proximamente"}> </ItemListContainer>
+      <ItemListContainer greeting={"Productos"}> </ItemListContainer>
       <ItemCount onAdd={handleOnAdd}/>
       
     </div>
