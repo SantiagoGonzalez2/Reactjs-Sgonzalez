@@ -1,25 +1,32 @@
 #contador{
     
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0;
    
 }
 
 #numero {
-    color:black;
+    color:#71C40A;
     
-    margin-top: 1%;
+    margin-top: 2%;
 }
 
-#botoncito{
-    width: 60px;
-    
-    border-radius: 33px;
+
+#button:hover{
+    color: black;
+    background-color:#71C40A ;
+    transition: 1;
 }
 
-#agregar {
-    margin-top: 4px;
-    border-radius: 33px;
 
+#button1:hover{
+    color: black;
+    background-color:red;
+    transition: 1;
+}
+
+#button1{
+    margin-top: 3px;
 }

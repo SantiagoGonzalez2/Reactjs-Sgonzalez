@@ -3,6 +3,9 @@ import ItemDetail from '../ItemDetail/ItemDetail.jsx';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { MrMiyagi } from '@uiball/loaders'
+import './spinner.css'
+
 
 
 
@@ -25,11 +28,17 @@ const ItemDetailContainer = () => {
 
    
     if(loading) {
-        return <div id='spinner' className="d-flex justify-content-center">
-        <div id='spinner' className="spinner-border" role="status">
-         
-        </div>
-      </div>
+        return  <div className='spinner'>  <MrMiyagi
+        size={60}
+       
+        speed={1}
+        
+        color= '#71C40A'
+        className='spinner'
+        
+    />
+    </div>
+      
     }
     return (
         <div>

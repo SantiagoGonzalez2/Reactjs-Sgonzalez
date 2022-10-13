@@ -22,11 +22,11 @@ export default function Navbar() {
           <div id="lista">
             
 
-           <NavLink to={'/category/tazas'} className='botones'> Tazas</NavLink>
+           <NavLink id="buttonL" to={'/category/tazas'} className='botones'> Tazas</NavLink>
 
-           <NavLink to={'/category/indumentaria'} className='botones'> Indumentaria</NavLink>
+           <NavLink id="buttonL" to={'/category/indumentaria'} className='botones'> Indumentaria</NavLink>
 
-           <NavLink to={'/category/temporadas'} className='botones'> Temporadas</NavLink>
+           <NavLink id="buttonL" to={'/category/temporadas'} className='botones'> Temporadas</NavLink>
 
           
            

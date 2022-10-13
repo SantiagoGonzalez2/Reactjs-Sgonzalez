@@ -15,6 +15,7 @@ const ItemDetail = ({ id, titulo, precio, img, descripcion, category }) => {
         
           }
      return (
+      <div >
         <div id="detalle" className="card">
         <img id='fotitod'  src={img} alt='fotito'/> 
         <div className="card-body">
@@ -23,6 +24,7 @@ const ItemDetail = ({ id, titulo, precio, img, descripcion, category }) => {
           <p className="card-text">{descripcion}</p>
           <ItemCount onAdd={handleOnAdd}/>
         </div>
+      </div>
       </div>
      )}
 

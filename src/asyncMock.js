@@ -47,7 +47,7 @@ const products = [
     },
     {
         id: '6',
-        titulo: 'Buzo Canguro Luminiscente  Rick And Morty 7',
+        titulo: 'Buzo Luminiscente  Rick And Morty ',
         precio: '5.490',
         img: 'https://res.cloudinary.com/dazcznbsh/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1665614280/Reactjs/cscs_a0l73k.webp',
         descripcion:'Después de haber estado desaparecido durante.',

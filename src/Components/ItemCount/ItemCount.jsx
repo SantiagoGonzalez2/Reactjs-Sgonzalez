@@ -28,12 +28,12 @@ const empty = () =>{
 
     return (
         <div id="contador">
-            <button id='botoncito' onClick={increase}>+</button>
+            <button className="btn btn-dark" id='button' onClick={decrease}>-</button>
             <p id='numero'>{quantity}</p>
-            <button id='botoncito' onClick={decrease}>-</button>
+            <button  className="btn btn-dark"id='button'onClick={increase} >+</button>
             <br />
-            <button id='agregar' onClick={onAdd}>Agregar al carrito</button>
-            <button id='agregar' onClick={empty}>Eliminar</button>
+            <button className="btn btn-dark" id='button' onClick={onAdd}>Agregar al carrito</button>
+            <button className="btn btn-dark" id='button1'   onClick={empty}>Eliminar</button>
         </div>
     )
 }

@@ -1,8 +1,14 @@
+
+
 #detalle {
-    width: 30%;
-    height: 200%;
+    height: 38rem;
+    width: 25rem;
     margin: auto;
     border-radius: 33px;
+    color: white;
+    text-align: justify;
+    background: rgb(121,121,121);
+background: radial-gradient(circle, rgba(121,121,121,1) 10%, rgba(18,18,18,1) 80%);
 }
 
 #fotitod{

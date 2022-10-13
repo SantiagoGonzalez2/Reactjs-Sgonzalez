@@ -8,9 +8,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css';
 import { useParams } from 'react-router-dom'
 import { getProductsByCategory } from '../../asyncMock.js';
+import { MrMiyagi } from '@uiball/loaders'
 
 
-const ItemListContainer =({ greeting }) => {
+
+
+const ItemListContainer = ({ greeting }) => {
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
 
@@ -27,21 +30,31 @@ const ItemListContainer =({ greeting }) => {
         }).finally(() => {
             setLoading(false)
         })
-     }, [category])
-   
-    if(loading) {
-        return <div id='spinner' className="d-flex justify-content-center">
-        <div id='spinner' className="spinner-border" role="status">
-         
-        </div>
-      </div>
+    }, [category])
+
+    if (loading) {
+        return (
+            <div className='spinner'>
+
+
+                <MrMiyagi
+                    size={60}
+                   
+                    speed={1}
+                    
+                    color= '#71C40A'
+                    className='spinner'
+                    
+                />
+               
+            </div>)
     }
 
-    return  (
+    return (
         <div id='lista2' className='animate__animated animate__backInRight'>
             <h1 className='tituloP'>{greeting}</h1>
             <div id='listad'>
-            <ItemList  products={products}/>
+                <ItemList products={products} />
             </div>
         </div>
     )
