@@ -22,6 +22,10 @@ const decrease = ()=> {
   }
 }
 
+const empty = () =>{
+    setQuantity(quantity === 0)
+}
+
     return (
         <div id="contador">
             <button id='botoncito' onClick={increase}>+</button>
@@ -29,6 +33,7 @@ const decrease = ()=> {
             <button id='botoncito' onClick={decrease}>-</button>
             <br />
             <button id='agregar' onClick={onAdd}>Agregar al carrito</button>
+            <button id='agregar' onClick={empty}>Eliminar</button>
         </div>
     )
 }
