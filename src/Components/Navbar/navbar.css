@@ -18,22 +18,27 @@
 }
 
 #lista{
-    display: flex;
-    justify-content: flex-end;
-    
+    display: flex;    
+justify-content: center;
+  
+}
 
-}
-#lista button {
-    margin: 0 10px 0 10px;
-    border-radius: 33px;
-}
-#lista li{
-    color: white;
-}
+
 #logo {
     height: 70px;
     position: absolute;
    z-index: 1;
    margin-top: 25px;
    margin-left: 3%;
+}
+
+.botones{
+    padding: 10px;
+    margin-top: 0;
+    margin-left: 3%;
+    margin-right: 3%;
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    border-radius:10px ;
 }

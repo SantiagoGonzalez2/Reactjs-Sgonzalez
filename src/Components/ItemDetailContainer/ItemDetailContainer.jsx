@@ -1,5 +1,5 @@
-import {getProductById} from '../../misProductos';
-import ItemDetail from './ItemDetail.jsx';
+import {getProductById} from '../../asyncMock';
+import ItemDetail from '../ItemDetail/ItemDetail.jsx';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';

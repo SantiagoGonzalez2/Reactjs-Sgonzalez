@@ -2,13 +2,14 @@ import logo from "../../imagenes/milogo.png";
 import './navbar.css';
 import '../CartWidget/Cartwidget'
 import Cartwidget from "../CartWidget/Cartwidget";
+import { Link, NavLink } from 'react-router-dom'
 
 
 export default function Navbar() {
     return (
       <div className="App">
         <header className="App-header">
-        <img id="logo" src={logo} alt="logo" />
+       <Link to={'/'} ><img id="logo" src={logo} alt="logo" /> </Link>
         
            
             
@@ -18,13 +19,19 @@ export default function Navbar() {
           
           <span>Santiago Productos</span>
         
-          <ul id="lista">
+          <div id="lista">
+            
+
+           <NavLink to={'/category/tazas'} className='botones'> Tazas</NavLink>
+
+           <NavLink to={'/category/indumentaria'} className='botones'> Indumentaria</NavLink>
+
+           <NavLink to={'/category/temporadas'} className='botones'> Temporadas</NavLink>
+
           
-            <button> Mis cosas</button>
-            <button> Las que necesitas</button>
-            <button> Las que no</button>
+           
           
-          </ul>
+          </div>
         
           </nav>
           
