@@ -2,14 +2,15 @@ import logo from "../../imagenes/milogo.png";
 import './navbar.css';
 import '../CartWidget/Cartwidget'
 import Cartwidget from "../CartWidget/Cartwidget";
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom';
+
 
 
 export default function Navbar() {
     return (
       <div className="App">
         <header className="App-header">
-       <Link to={'/'} ><img id="logo" src={logo} alt="logo" /> </Link>
+       <Link to={'/products'} ><img id="logo" src={logo} alt="logo" /> </Link>
         
            
             
@@ -17,7 +18,7 @@ export default function Navbar() {
           <span><Cartwidget/></span>
           
           
-          <span>Santiago Productos</span>
+          <span>Rick And Morty</span>
         
           <div id="lista">
             

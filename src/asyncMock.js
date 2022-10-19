@@ -6,7 +6,7 @@ const products = [
         img: 'https://res.cloudinary.com/dazcznbsh/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1665614283/Reactjs/ricke_xwwgfo.webp',
         descripcion:'Tazón de Rick and Morty! Capacidad: 600 cc.',
         category : 'tazas',
-        stock: "11",
+        stock: 11,
     },
     {
         id: '2',
@@ -15,7 +15,7 @@ const products = [
         img: 'https://res.cloudinary.com/dazcznbsh/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1665614287/Reactjs/tazon_ozuftk.webp',
         descripcion:'TAZA BLANCA DE PORCELANA IMPORTADA CALIDAD PREMIUM,Apta para microondas y lavavajillas,Medida de la taza 9,6 (alto) x 8,5 cm (Diámetro',
         category : 'tazas',
-        stock: 10,
+        stock: 13,
     },
     {
         id: '3',
@@ -24,7 +24,7 @@ const products = [
         img: 'https://res.cloudinary.com/dazcznbsh/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1665614281/Reactjs/1212_wjtf3u.webp',
         descripcion:'Capacidad: 500 cc, CERAMICA',
         category : 'tazas',
-        stock: 10,
+        stock: 8,
     },  {
         id: '4',
         titulo: 'Buzo Negro Canguro Hoodier',
@@ -32,7 +32,7 @@ const products = [
         img: 'https://res.cloudinary.com/dazcznbsh/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1665614282/Reactjs/D_NQ_NP_917942-MLA50214348695_062022-O_gfwbvc.webp',
         descripcion:'Bolsillo canguro, suave al tacto , abrigado, capucha doble',
         category : 'indumentaria',
-        stock: 10,
+        stock: 3,
 
     },
     {
@@ -42,7 +42,7 @@ const products = [
         img: 'https://res.cloudinary.com/dazcznbsh/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1665614280/Reactjs/565_jixkka.webp',
         descripcion:'Pijama verano perfecta calidad UNISEX',
         category : 'indumentaria',
-        stock: 10,
+        stock: 19,
 
     },
     {
@@ -52,7 +52,7 @@ const products = [
         img: 'https://res.cloudinary.com/dazcznbsh/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1665614280/Reactjs/cscs_a0l73k.webp',
         descripcion:'Después de haber estado desaparecido durante.',
         category : 'indumentaria',
-        stock: 10,
+        stock: 5,
     },
     {
         id: '7',

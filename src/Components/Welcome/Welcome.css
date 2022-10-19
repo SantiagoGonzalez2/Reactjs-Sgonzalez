@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+
+.init{
+    text-align: center;
+    padding: 30px;
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 10%;
+    font-family: 'Silkscreen', cursive;
+}
+
+.goinit{
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'Silkscreen', cursive;
+
+   
+    
+}
+.goinit:hover{
+    color: #88C347;
+    transition: 3s;
+}

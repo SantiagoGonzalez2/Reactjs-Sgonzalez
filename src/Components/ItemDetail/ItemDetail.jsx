@@ -1,19 +1,26 @@
 import './detalle.css'
 import ItemCount from '../ItemCount/ItemCount'
-const ItemDetail = ({ id, titulo, precio, img, descripcion, category }) => {
+import { CartContext } from '../../context/CartContext'
+import { useContext } from 'react'
 
 
-    const productToAdd = {id, precio, category}
 
-    console.log(productToAdd)
+const ItemDetail = ({ id, titulo, precio, img, descripcion, category, stock }) => {
+
+  const { addItem } = useContext(CartContext)
+
+
+  const handleOnAdd = (quantity) => {
+    const productToAdd = {id, precio, category, quantity, stock}
+      
+      addItem(productToAdd)
+
+      console.log(productToAdd)
+        }
+
        
-   
 
-  
-    const handleOnAdd = () => {
-        console.log('se agrego al carrito')
-        
-          }
+
      return (
       <div >
         <div id="detalle" className="card">
@@ -22,7 +29,8 @@ const ItemDetail = ({ id, titulo, precio, img, descripcion, category }) => {
           <h5 className="card-title">{titulo}</h5>
           <p className="card-text">{precio}</p>
           <p className="card-text">{descripcion}</p>
-          <ItemCount onAdd={handleOnAdd}/>
+          <p> Disponible:{stock}</p>
+          <ItemCount onAdd={handleOnAdd} stock={stock}/>
         </div>
       </div>
       </div>
