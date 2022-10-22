@@ -2,6 +2,7 @@ const products = [
     {
         id: "1",
         titulo: 'Tazón Rick And Morty',
+        
         precio: '2.190',
         img: 'https://res.cloudinary.com/dazcznbsh/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1665614283/Reactjs/ricke_xwwgfo.webp',
         descripcion:'Tazón de Rick and Morty! Capacidad: 600 cc.',

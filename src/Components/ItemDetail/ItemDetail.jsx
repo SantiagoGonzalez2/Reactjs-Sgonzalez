@@ -5,13 +5,14 @@ import { useContext } from 'react'
 
 
 
+
 const ItemDetail = ({ id, titulo, precio, img, descripcion, category, stock }) => {
 
   const { addItem } = useContext(CartContext)
 
 
   const handleOnAdd = (quantity) => {
-    const productToAdd = {id, precio, category, quantity, stock}
+    const productToAdd = {id, precio, category, quantity, stock,titulo}
       
       addItem(productToAdd)
 
