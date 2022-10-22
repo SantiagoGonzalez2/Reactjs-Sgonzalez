@@ -18,7 +18,7 @@ export default function Navbar() {
           <span><Cartwidget/></span>
           
           
-          <span>Rick And Morty</span>
+         
         
           <div id="lista">
             

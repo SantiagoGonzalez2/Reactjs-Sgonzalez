@@ -44,10 +44,23 @@ export const CartProvider = ({children}) => {
 
         return accu
     }
+    const getTotal = () => {
+        let accu = 0
+  
+        cart.forEach(prod => {
+            accu = prod.quantity * prod.precio
+        })
+  
+        return accu
+    }
+
+    const clearCart = () => {
+        setCart([])
+    }
 
 
     return (
-        <CartContext.Provider value={{ cart, addItem, removeItem, totalQuantity}}>
+        <CartContext.Provider value={{ cart, addItem, removeItem, totalQuantity, getTotal, clearCart}}>
             {children}
         </CartContext.Provider>
     )

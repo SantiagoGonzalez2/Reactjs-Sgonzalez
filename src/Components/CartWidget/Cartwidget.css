@@ -8,11 +8,11 @@
     
     position: absolute;
    z-index: 2;
-   margin-top: 1%;
-   margin-left: 93%;
+   margin-top: 10px;
+   margin-left: 90%;
    
 }
 .carrocontador span {
     color: white;
-    margin-left: 23px;
+    margin-left: 10px;
 }

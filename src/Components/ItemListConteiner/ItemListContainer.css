@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 .tituloP{
-    font-size: 70px;
+    font-size: 100px;
    color: white;
     text-align: center;
-    padding-top: 2%;
-    font-family: 'Silkscreen', cursive;
+    padding-top: 1%;
+    font-family: 'Bebas Neue', cursive;
+    margin: 0;
   
 }
 
@@ -12,4 +13,3 @@
   margin-left:46%;
   margin-top:13%;
 }
-
