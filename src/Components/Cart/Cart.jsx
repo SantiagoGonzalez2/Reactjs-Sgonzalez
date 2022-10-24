@@ -16,8 +16,15 @@ console.log(cart, 'llego?' )
 
 return(
    <div>
+     
+
+
     {
         cart.map(prod => (
+
+        
+
+   
         <div className="itemCart">
 
            <h1 className="title">
@@ -33,6 +40,13 @@ return(
         </ul>
 
         </div>
+
+        
+
+      
+
+      
+
          
          
         ))

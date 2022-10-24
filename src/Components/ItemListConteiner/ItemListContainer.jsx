@@ -13,6 +13,9 @@ import { MrMiyagi } from '@uiball/loaders'
 
 
 
+
+
+
 const ItemListContainer = ({ greeting }) => {
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
@@ -39,14 +42,15 @@ const ItemListContainer = ({ greeting }) => {
 
                 <MrMiyagi
                     size={60}
-                   
+
                     speed={1}
-                    
-                    color= '#71C40A'
+
+                    color='#71C40A'
                     className='spinner'
-                    
+
                 />
-               
+
+
             </div>)
     }
 

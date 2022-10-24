@@ -1,18 +1,24 @@
 #contador{
     
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 0;
+  
    
 }
 
 #numero {
     color:#71C40A;
     
-    margin-top: 2%;
+  
+    text-align: center;
 }
 
+#button{
+    width: 150px;
+   margin: auto;
+   margin-top: 10px;
+}
 
 #button:hover{
     color: black;
@@ -28,5 +34,7 @@
 }
 
 #button1{
-    margin-top: 3px;
+    margin-top: 5px;
+    width: 150px;
+    margin:auto;
 }

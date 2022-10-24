@@ -24,9 +24,9 @@ function App() {
 
       
       <CartProvider>
+      
         <BrowserRouter>
           <Navbar />
-          
           <Routes>
             <Route path='/' element={<Welcome />} />
             <Route path='/category/:category' element={<ItemListContainer />} />

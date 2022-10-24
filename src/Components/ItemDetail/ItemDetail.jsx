@@ -31,7 +31,7 @@ const ItemDetail = ({ id, titulo, precio, img, descripcion, category, stock }) =
 
   return (
     <div >
-      <div id="detalle" className="card">
+      {/* <div id="detalle" className="card">
         <img id='fotitod' src={img} alt='fotito' />
         <div className="card-body">
           <h5 className="card-title">{titulo}</h5>
@@ -41,7 +41,29 @@ const ItemDetail = ({ id, titulo, precio, img, descripcion, category, stock }) =
           <ItemCount onAdd={handleOnAdd}  stock={stock} />
           
         </div>
-      </div>
+      </div> */}
+      <div className="itemCart1">
+
+      <img id='fotitod' src={img} alt='fotito' />
+
+<h1 className="titleDetail">
+ {titulo}
+ </h1>
+ <ul className='listDetail'>
+<li className="elementDetail"> $ {precio}</li>
+
+
+<li className="elementDetail">Stock = {stock}</li>
+<li className="elementDetail">{descripcion}</li>
+
+<ItemCount onAdd={handleOnAdd}  stock={stock} />
+
+
+</ul>
+
+</div>
+
+
     </div>
   )
 }
