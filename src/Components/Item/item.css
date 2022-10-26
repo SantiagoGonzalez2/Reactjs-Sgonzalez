@@ -9,6 +9,8 @@
     border-radius: 33px;
     color: white;
     background-color: #3D3B3C;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
     
     
 }
@@ -19,7 +21,7 @@
 #card:hover{box-shadow: 79px 17px 53px 3px #57A647;
     -moz-box-shadow: 79px 17px 53px 3px rgba(0,0,0,0.73);
     box-shadow: 79px 17px 53px 3px #57A647;
-    transition: 1s;
+    transition: .2s;
     
 
 }

@@ -1,14 +1,13 @@
 import './ItemListContainer.css';
 import '../ItemList/ItemList';
-import { getProducts } from '../../asyncMock.js'
 import { useState } from 'react';
 import { useEffect } from 'react';
 import ItemList from '../ItemList/ItemList';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css';
 import { useParams } from 'react-router-dom'
-import { getProductsByCategory } from '../../asyncMock.js';
-import { MrMiyagi } from '@uiball/loaders'
+import { MrMiyagi } from '@uiball/loaders';
+import { getFirestore, collection, getDocs, where, query } from 'firebase/firestore'
 
 
 
@@ -19,20 +18,38 @@ import { MrMiyagi } from '@uiball/loaders'
 const ItemListContainer = ({ greeting }) => {
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
-
     const { category } = useParams()
+    
 
     useEffect(() => {
         setLoading(true)
 
-        const asyncFunction = category ? getProductsByCategory : getProducts
-        asyncFunction(category).then(response => {
-            setProducts(response)
-        }).catch(error => {
-            console.log(error)
-        }).finally(() => {
+        const querydb = getFirestore()
+        const queryCollection = collection(querydb, 'products' );
+       
+       
+        if(category){
+        const queryFilter = query(queryCollection, where('category','==', category))
+        getDocs(queryFilter)
+        .then(res => setProducts(res.docs.map (product => ({id: product.id, ...product.data()}) )))
+        .finally(() => {
             setLoading(false)
         })
+
+        }
+        
+        
+        else{
+            getDocs(queryCollection)
+            .then(res => setProducts(res.docs.map (product => ({id: product.id, ...product.data()}) )))
+            .finally(() => {
+                setLoading(false)
+            })
+    
+        }
+       
+
+      
     }, [category])
 
     if (loading) {

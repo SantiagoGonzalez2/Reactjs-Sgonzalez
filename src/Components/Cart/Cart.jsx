@@ -1,17 +1,29 @@
 import React from "react"
 import { CartContext }from '../../context/CartContext.jsx'
 import { useContext } from "react"
-import './Cart.css'
+import './Cart.css';
+import swal from "sweetalert";
+import { Link } from "react-router-dom";
 
 
 
 
 
-const Cart = () => {
+
+const Cart = (props) => {
 const  { cart, removeItem, getTotal, clearCart } = useContext(CartContext)
 
-console.log(cart, 'llego?' ) 
-    
+
+
+
+const alert = () =>{
+   swal({
+     title:"Ha vaciado el carrito por completo", 
+     text:"Tan laucha es? gaste unos pesitos",
+     icon: "warning",
+    }) }
+ 
+  
 
 
 return(
@@ -20,12 +32,12 @@ return(
 
 
     {
-        cart.map(prod => (
+        cart.map(prod =>  (
 
         
 
    
-        <div className="itemCart">
+        <div className="itemCart" key={prod.id}>
 
            <h1 className="title">
             {prod.titulo}
@@ -53,8 +65,9 @@ return(
         
     }
     <button className="generator">Generar orden</button>
+    <Link to={'/products'} className="generator4">Volver a la tienda</Link>
     <button className="generator2"> Precio total: $ {getTotal(cart)}</button>
-    <button className="generator3" onClick={() => clearCart(cart)}>Vaciar el carrito</button>
+    <button className="generator3" onClick={() =>{ clearCart(cart); alert()}}>Vaciar el carrito</button>
     
    </div>
    

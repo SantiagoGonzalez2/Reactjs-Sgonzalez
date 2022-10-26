@@ -1,15 +1,20 @@
 import React from "react"
 import { useState, useContext } from 'react';
 import './ItemCount.css';
-
 import { Link } from "react-router-dom";
+import swal from "sweetalert";
 
 
 
 const ItemCount = ({ stock = 0, initial = 1, onAdd }) => {
   const [quantity, setQuantity] = useState(initial)
 
- 
+ const alert = () =>{
+  swal({
+    title:"Producto agregado.", 
+    text:"En el carrito podra finalizar la compra.",
+    icon: "success"
+   }) }
 
   const increment = () => {
     if (quantity < stock) {
@@ -43,7 +48,7 @@ const ItemCount = ({ stock = 0, initial = 1, onAdd }) => {
     
 
 
-      <button className="btn btn-dark" id='button'  onClick={() =>{ onAdd(quantity); setButtonText("Elemento agregado") }}>{buttonText}</button>
+      <button className="btn btn-dark" id='button'  onClick={() =>{ onAdd(quantity); setButtonText("Elemento agregado"); alert() }}>{buttonText}</button>
 
       <Link to={'/cart'} className="btn btn-dark" id='button'  >Ir al carrito</Link>
 
