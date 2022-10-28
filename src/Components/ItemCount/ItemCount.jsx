@@ -1,5 +1,5 @@
 import React from "react"
-import { useState, useContext } from 'react';
+import { useState } from 'react';
 import './ItemCount.css';
 import { Link } from "react-router-dom";
 import swal from "sweetalert";
@@ -29,11 +29,8 @@ const ItemCount = ({ stock = 0, initial = 1, onAdd }) => {
 
 
   }
-  // const empty = () => {
-  //   setQuantity(quantity === 1)
-  // }
 
-  const [buttonText, setButtonText] = useState("Agregar al carro"); //same as creating your state variable where "Next" is the default value for buttonText and setButtonText is the setter function for your state variable instead of setState
+  const [buttonText, setButtonText] = useState("Agregar al carro");
 
  
   
@@ -48,7 +45,7 @@ const ItemCount = ({ stock = 0, initial = 1, onAdd }) => {
     
 
 
-      <button className="btn btn-dark" id='button'  onClick={() =>{ onAdd(quantity); setButtonText("Elemento agregado"); alert() }}>{buttonText}</button>
+      <button className="btn btn-dark" id='button'  onClick={() =>{ onAdd(quantity); setButtonText("Elemento agregado,vacie el carro para volver a agregar"); alert() }}>{buttonText}</button>
 
       <Link to={'/cart'} className="btn btn-dark" id='button'  >Ir al carrito</Link>
 

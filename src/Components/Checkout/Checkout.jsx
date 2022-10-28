@@ -3,15 +3,32 @@ import { CartContext } from '../../context/CartContext.jsx'
 import { useContext } from "react";
 import { addDoc, collection, getDocs, getFirestore, query, where, documentId, writeBatch } from 'firebase/firestore';
 import swal from "sweetalert";
-
-
 import React from 'react';
+import { useState } from 'react';
+
+
+
+
 
 
 
 const Checkout = () => {
 
     const { cart, getTotal, totalQuantity, clearCart } = useContext(CartContext)
+
+    const [ name, setName] = useState('')
+    const [ lastName, setLastName] = useState('')
+    const [ email, setEmail] = useState('')
+    const [ coments, setComents] = useState('')
+
+   
+
+    
+
+    
+
+    
+
 
   
 
@@ -31,9 +48,10 @@ const Checkout = () => {
    
         const order = {
             comprador: {
-                nombre: '',
-                apellido:'',
-                email:'',
+                nombre: name,
+                apellido: lastName,
+                email: email,
+                comentarios: coments,
                 },
                 Productos: cart.map(product => ({id: product.id, titulo:product.titulo, cantidad:product.quantity})),
                
@@ -96,6 +114,7 @@ const Checkout = () => {
 
         }else {
             console.log('productos fuera de stock')
+          
         }
     
        
@@ -103,7 +122,6 @@ const Checkout = () => {
 
 
    
-
 
 
    
@@ -119,53 +137,60 @@ const Checkout = () => {
 
 
 
-            <h1>Completa los datos para generar la orden.</h1>
-            <form className="myForm">
-                <div className='myForm1' >
-                    <label  className="form-label">Nombre</label>
-                    <input type="text" className="form-control" id="exampleFormControlInput1"   placeholder="Juanito Carlos Segundo " />
-                    <label  className="form-label">Apellido</label>
-                    <input type="text" className="form-control" id="exampleFormControlInput1"   placeholder="Telasube" />
-                    <label  className="form-label">Email address</label>
-                    <input type="email" className="form-control"  id="exampleFormControlInput1" placeholder="tunombre@tucorreo.com" />
-                </div>
-                <div className="myForm1">
-                    <h3>Pedido:</h3>
-                    <ul className='myFormul'>
-                        {cart.map(prod => {
-                            return (
-                                <div key={prod.id}>
-                                    <li>{prod.titulo}</li>
-                                    <li> {prod.quantity}</li>
-
-
-                                </div>
-
-                            )
-                        })}
-
-
-                        <li className='myFormsepar'>-------------------------------------------</li>
-                        <li className='myFormli'>Cantidad de productos: {totalQuantity}</li>
-
-                        <li className='myFormli'>Valor total: $ {getTotal(cart)} </li>
-
-                    </ul>
-                    <label  className="form-label">Comentarios sobre el pedido:</label>
-                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
-                </div>
-                
-                <button className='myFormbutton' onClick={generateOrder}> GENERAR ORDEN</button>
-            </form>
-
+        <h1>Completa los datos para generar la orden.</h1>
+        <form className="myForm">
+        <div className='myForm1' >
+            <label  className="form-label">Nombre</label>
+            <input type="text" className="form-control" id="exampleFormControlInput1" value={name} onChange={(e) => setName(e.target.value)}   placeholder="Juanito Carlos Segundo " />
+            <label  className="form-label">Apellido</label>
+            <input type="text" className="form-control" id="exampleFormControlInput1" value={lastName} onChange={(e) => setLastName(e.target.value)}   placeholder="Telasube" />
+            <label  className="form-label">Email address</label>
+            <input type="email" className="form-control" value={email} onChange={(e) => setEmail(e.target.value)}   id="exampleFormControlInput1" placeholder="tunombre@tucorreo.com" />
         </div>
+            <div className="myForm1">
+                <h3>Pedido:</h3>
+                <ul className='myFormul'>
+                    {cart.map(prod => {
+                        return (
+                            <div key={prod.id}>
+                                <li>{prod.titulo}</li>
+                                <li> {prod.quantity}</li>
+
+
+                            </div>
+
+                        )
+                    })}
+
+
+                    <li className='myFormsepar'>-------------------------------------------</li>
+                    <li className='myFormli'>Cantidad de productos: {totalQuantity}</li>
+
+                    <li className='myFormli'>Valor total: $ {getTotal(cart)} </li>
+
+                </ul>
+                <label  className="form-label">Comentarios sobre el pedido:</label>
+                <textarea className="form-control" value={coments} onChange={(e) => setComents(e.target.value)} id="exampleFormControlTextarea1" rows="2"></textarea>
+            </div>
+            
+            <button className='myFormbutton' onClick={generateOrder}> GENERAR ORDEN</button>
+        </form>
+
+    </div>
 
 
 
 
 
 
-    )
+)
+
+
+
+
+
+
+    
 
 
 

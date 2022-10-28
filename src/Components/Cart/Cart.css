@@ -30,11 +30,12 @@ background-color: #3D3B3C;
     font-size: 35px;
     font-family: 'Bebas Neue', cursive;
     text-decoration: none;
-    color: black;
+    color: green;
     
    }
    .cartGo:hover {
-    color:#01511F
+    color:yellow;
+
 
    }
 .title{

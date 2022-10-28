@@ -1,5 +1,7 @@
 import { useState, useEffect, createContext } from "react"
 
+
+
 export const CartContext = createContext({
     cart: [],
     totalQuantity: 0
@@ -16,7 +18,8 @@ export const CartProvider = ({children}) => {
    
         const totalQty = getQuantity()
         setTotalQuantity(totalQty)
-    }, [cart])
+        // eslint-disable-next-line
+    }, [cart])  
 
     const addItem = (productToAdd) => {
         console.log('additem')
@@ -26,9 +29,17 @@ export const CartProvider = ({children}) => {
         console.log('ya esta en el carrito')
         }
     }
+   
+       
+
+       
 
     const isInCart = (id) => {
         return cart.some(prod => prod.id === id)
+       
+       
+  
+        
     }
 
     const removeItem = (id) => {

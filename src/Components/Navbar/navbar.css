@@ -39,7 +39,7 @@ justify-content: center;
     font-family: 'Bebas Neue', cursive;
     text-decoration: none;
     color: white;
-    background:black;
+   
     border-radius:6px ;
     height: 35px;
     width: 120px;
@@ -48,8 +48,8 @@ justify-content: center;
 }
 
 .botones:hover{
-    background-color:#01511F;
-    color: white;
+    
+    color: black;
   
 }
 
