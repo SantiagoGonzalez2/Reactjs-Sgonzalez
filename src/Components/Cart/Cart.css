@@ -17,7 +17,7 @@
 box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
 background-color: #3D3B3C;
   
-   
+  
 
 }
 .itemCart:hover{
@@ -25,6 +25,18 @@ background-color: #3D3B3C;
     transition: .5;
     
 }
+.cartGo{
+    margin-left: 98vh;
+    font-size: 35px;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    color: black;
+    
+   }
+   .cartGo:hover {
+    color:#01511F
+
+   }
 .title{
     font-size: 20px;
     
@@ -53,6 +65,9 @@ background-color: #3D3B3C;
     color: white;
     border-style: none;
     font-family: 'Bebas Neue', cursive;
+    padding-top:12px ;
+    padding-left: 83px;
+    text-decoration: none;
 
 }
 .generator1 {

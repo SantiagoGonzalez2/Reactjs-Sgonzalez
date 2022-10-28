@@ -10,7 +10,8 @@ import { Link } from "react-router-dom";
 
 
 
-const Cart = (props) => {
+
+const Cart = () => {
 const  { cart, removeItem, getTotal, clearCart } = useContext(CartContext)
 
 
@@ -23,7 +24,14 @@ const alert = () =>{
      icon: "warning",
     }) }
  
-  
+  if (cart.length === 0) {
+   return( 
+      <div>
+      <h1>el carro esta vacio</h1>
+      <Link className="cartGo" to={'/'}>Tienda </Link>
+      </div>
+   )
+  }
 
 
 return(
@@ -64,7 +72,7 @@ return(
         ))
         
     }
-    <button className="generator">Generar orden</button>
+    <Link to='/checkout'className="generator">Generar orden</Link>
     <Link to={'/products'} className="generator4">Volver a la tienda</Link>
     <button className="generator2"> Precio total: $ {getTotal(cart)}</button>
     <button className="generator3" onClick={() =>{ clearCart(cart); alert()}}>Vaciar el carrito</button>
