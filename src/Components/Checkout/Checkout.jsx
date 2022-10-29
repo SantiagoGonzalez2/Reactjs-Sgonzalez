@@ -98,7 +98,7 @@ const Checkout = () => {
             const ordersCollection = collection(db, 'ordenes');
            const orderAdded= await addDoc(ordersCollection, order)
 
-           console.log(orderAdded)
+           
            const alert = () =>{
             swal({
               title:"Orden Creada.", 
@@ -113,7 +113,16 @@ const Checkout = () => {
             
 
         }else {
-            console.log('productos fuera de stock')
+            const alert = () =>{
+                swal({
+                  title:"Sin Stock" ,
+                  
+                  icon: "danger"
+                 }) }
+        
+              alert ()
+             
+    
           
         }
     
@@ -146,6 +155,8 @@ const Checkout = () => {
             <input type="text" className="form-control" id="exampleFormControlInput1" value={lastName} onChange={(e) => setLastName(e.target.value)}   placeholder="Telasube" />
             <label  className="form-label">Email address</label>
             <input type="email" className="form-control" value={email} onChange={(e) => setEmail(e.target.value)}   id="exampleFormControlInput1" placeholder="tunombre@tucorreo.com" />
+            <label  className="form-label">Comentarios sobre el pedido:</label>
+                <textarea className="form-control" value={coments} onChange={(e) => setComents(e.target.value)} id="exampleFormControlTextarea1" rows="2"></textarea>
         </div>
             <div className="myForm1">
                 <h3>Pedido:</h3>
@@ -169,8 +180,7 @@ const Checkout = () => {
                     <li className='myFormli'>Valor total: $ {getTotal(cart)} </li>
 
                 </ul>
-                <label  className="form-label">Comentarios sobre el pedido:</label>
-                <textarea className="form-control" value={coments} onChange={(e) => setComents(e.target.value)} id="exampleFormControlTextarea1" rows="2"></textarea>
+            
             </div>
             
             <button className='myFormbutton' onClick={generateOrder}> GENERAR ORDEN</button>

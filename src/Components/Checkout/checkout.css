@@ -12,9 +12,10 @@ h3 {
 }
 
 .myForm {
-    width: 50vh;
+    
 
     margin: auto;
+    display: flex;
 
 }
 
@@ -24,6 +25,8 @@ h3 {
     color: white;
     font-family: 'Bebas Neue';
     font-size: 25px;
+    width: 100vh;
+    margin-top: 3%;
 }
 
 
@@ -42,7 +45,7 @@ h3 {
 
 .myFormbutton {
     margin-left: 0px;
-    margin-bottom: 20px;
+   margin-top: 26%;
 
     border-radius: 10px;
    

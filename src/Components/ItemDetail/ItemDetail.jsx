@@ -22,7 +22,7 @@ const ItemDetail = ({ id, titulo, precio, img, descripcion, category, stock }) =
     addItem(productToAdd)
 
 
-    console.log(productToAdd)
+   
 
   }
 
