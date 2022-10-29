@@ -4,8 +4,10 @@
 
 .itemCart{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
+    
     padding: 8px;
     margin-bottom:10px ;
     border-style:solid ; 
@@ -62,7 +64,7 @@ background-color: #3D3B3C;
     margin-bottom: 10px;
     width: 250px;
     height: 50px;
-    background-color: black;
+    background-color: rgb(0, 59, 0);
     color: white;
     border-style: none;
     font-family: 'Bebas Neue', cursive;
@@ -79,7 +81,7 @@ background-color: #3D3B3C;
     margin-bottom: 5px;
     width: 120px;
     height: 50px;
-    background-color: black;
+    background-color: grey;
     color: white;
     border-style: none;
     font-family: 'Bebas Neue', cursive;
@@ -103,7 +105,7 @@ background-color: #3D3B3C;
     margin-bottom: 70px;
     width: 250px;
     height: 50px;
-    background-color: black;
+    background-color: rgb(81, 81, 81);
     color: white;
     border-style: none;
     font-family: 'Bebas Neue', cursive;
@@ -129,11 +131,18 @@ background-color: #3D3B3C;
     margin-bottom: 190px;
     width: 250px;
     height: 50px;
-    background-color: black;
+    background-color: rgb(81, 81, 81);
     color: white;
     border-style: none;
     font-family: 'Bebas Neue', cursive;
     text-align: center;
     text-decoration: none;
     padding-top:15px
+}
+
+
+
+#imgCart{
+    width: 30vh;
+    border-radius: 10px;
 }

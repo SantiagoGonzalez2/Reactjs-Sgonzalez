@@ -47,6 +47,8 @@ return(
    
         <div className="itemCart" key={prod.id}>
 
+         <img src={prod.img} alt="img product" id="imgCart" />
+
            <h1 className="title">
             {prod.titulo}
             </h1>
