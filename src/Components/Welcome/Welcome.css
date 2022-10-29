@@ -3,21 +3,18 @@
 
 .init{
     text-align: center;
-    padding: 30px;
+    padding: 60px;
+    
 }
 
-h1{
-    color: white;
-    font-size: 60px;
-    margin-bottom: 10%;
-    font-family: 'Bebas Neue', cursive;
-}
+
 
 .goinit{
     color: white;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 70px;
     font-family: 'Bebas Neue', cursive;
+   
 
    
     

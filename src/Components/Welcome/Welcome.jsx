@@ -7,7 +7,7 @@ const Welcome = () => {
 
     return (
         <div className='init'>
-            <h1>
+            <h1 className='goinit'>
                 WELCOME 
                 <br />
                 Rick And Morty
