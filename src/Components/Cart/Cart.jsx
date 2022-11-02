@@ -77,7 +77,7 @@ return(
     }
     <Link to='/checkout'className="generator">Generar orden</Link>
     <Link to={'/products'} className="generator4">Volver a la tienda</Link>
-    <button className="generator2"> Precio total: $ {getTotal(cart)}</button>
+    <p className="generator2"> Precio total: $ {getTotal(cart)}</p>
     <button className="generator3" onClick={() =>{ clearCart(cart); alert()}}>Vaciar el carrito</button>
     
    </div>

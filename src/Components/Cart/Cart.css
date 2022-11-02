@@ -99,17 +99,19 @@
 }
 
 .generator2 {
-    border-radius: 10px;
-    margin-left: 80%;
+    
+   margin-left: 83%;
+
     position: fixed;
-    bottom: 0;
-    margin-bottom: 70px;
+  
+   
     width: 250px;
     height: 50px;
-    background-color: rgb(81, 81, 81);
+    
     color: white;
     border-style: none;
     font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
 }
 .generator3 {
     border-radius: 10px;
