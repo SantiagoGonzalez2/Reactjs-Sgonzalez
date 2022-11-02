@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 
 
 
+
 const Cart = () => {
 const  { cart, removeItem, getTotal, clearCart } = useContext(CartContext)
 
@@ -64,7 +65,7 @@ return(
         </div>
 
         
-
+      
       
 
       

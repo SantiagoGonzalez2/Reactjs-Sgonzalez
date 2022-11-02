@@ -2,13 +2,14 @@ h1 {
     font-family: 'Bebas Neue';
     font-size: 45px;
     text-align: center;
-    margin-bottom: 10px;
+    
 }
 
 h3 {
     font-family: 'Bebas Neue';
     font-size: 25px;
-    text-align: center;
+    text-align: start;
+    margin-left: 32px;
 }
 
 .myForm {
@@ -16,17 +17,25 @@ h3 {
 
     margin: auto;
     display: flex;
+    margin-left: 20px;
+    
 
+}
+.break{
+    text-align: justify;
 }
 
 .myForm1 {
-    margin-bottom: 10px;
-    text-align: center;
+    margin-bottom: 30px;
+    text-align: start;
     color: white;
     font-family: 'Bebas Neue';
     font-size: 25px;
     width: 100vh;
     margin-top: 3%;
+    
+  
+   
 }
 
 
@@ -34,18 +43,14 @@ h3 {
     
     text-align: start;
     margin-top: 10px;
-}
-.myFormsepar {
     list-style: none;
-    text-align: start;
-    margin-top: 10px;
-    color: black;
-    text-align: center;
+    
 }
 
+
 .myFormbutton {
-    margin-left: 0px;
-   margin-top: 26%;
+    margin-right: 15px;
+   margin-top: 34%;
 
     border-radius: 10px;
    

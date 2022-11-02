@@ -37,11 +37,15 @@ const ItemCount = ({ stock = 0, initial = 1, onAdd }) => {
       <p id='numero'>{quantity}</p>
       <button className="btn btn-dark" id='button' onClick={decrement} >-</button>
       <br />
+
+
+      
     
 
 
       <button className="btn btn-dark" id='button'  onClick={() =>{ onAdd(quantity); setButtonText("Elemento agregado,vacie el carro para volver a agregar");  }}>{buttonText}</button>
-
+      
+      
       <Link to={'/cart'} className="btn btn-dark" id='button'  >Ir al carrito</Link>
 
  

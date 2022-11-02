@@ -36,20 +36,22 @@ const ItemDetail = ({ id, titulo, precio, img, descripcion, category, stock }) =
 
         <img id='fotitod' src={img} alt='fotito' />
 
+      
+        <ul className='listDetail'>
         <h1 className="titleDetail">
           {titulo}
         </h1>
-        <ul className='listDetail'>
-          <li className="elementDetail"> $ {precio}</li>
+          <li className="elementDetail">Valor: $ {precio}</li>
 
 
           <li className="elementDetail">Stock = {stock}</li>
-          <li className="elementDetail">{descripcion}</li>
+          <li className="elementDetail">Detalle: {descripcion}.</li>
 
-          <ItemCount onAdd={handleOnAdd} stock={stock} />
+         
 
 
         </ul>
+        <ItemCount className="cont" onAdd={handleOnAdd} stock={stock} />
 
       </div>
 

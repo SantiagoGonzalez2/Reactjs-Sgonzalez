@@ -14,16 +14,17 @@
     border-radius: 10px;
     margin-right:50%;
     border-width: 2px;
-    box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
-background-color: #3D3B3C;
+    box-shadow: 79px 17px 53px 3px #000000;
+    -moz-box-shadow: 79px 17px 53px 3px rgba(0,0,0,0.73);
+    box-shadow: 79px 17px 53px 3px #0e2709;
+    
+ 
   
   
 
 }
 .itemCart:hover{
-    background-color: black;
+    background-color: #1B1C1E;
     transition: .5;
     
 }
@@ -143,6 +144,6 @@ background-color: #3D3B3C;
 
 
 #imgCart{
-    width: 30vh;
+    width: 50vh;
     border-radius: 10px;
 }
