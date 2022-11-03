@@ -5,6 +5,8 @@ import { addDoc, collection, getDocs, getFirestore, query, where, documentId, wr
 import swal from "sweetalert";
 import React from 'react';
 import { useState } from 'react';
+import { useNavigate } from "react-router-dom"
+
 
 
 
@@ -21,7 +23,7 @@ const Checkout = () => {
     const [email, setEmail] = useState('')
     const [coments, setComents] = useState('')
     const [email1, setEmail1] = useState('')
-
+    const navigate = useNavigate()
 
 
 
@@ -43,8 +45,11 @@ const Checkout = () => {
 
     const generateOrder = async (e) => {
 
+     
 
 
+
+        
 
 
 
@@ -129,12 +134,19 @@ const Checkout = () => {
                 swal({
                     title: "Orden Creada.",
                     text: `El id de su orden es: ${orderAdded.id}`,
-                    icon: "success"
+                    icon: "success",
+                     
+                    
                 })
             }
 
             alert()
             clearCart(cart)
+            setTimeout(() => {
+                navigate('/products')
+            }, 2000)
+
+          
 
 
 
@@ -155,6 +167,7 @@ const Checkout = () => {
         }
 
     }
+    
 
 
 }

@@ -20,6 +20,9 @@
     
     
 }
+.card-body{
+    margin-top: 28px;
+}
 #img{
     border-radius: 10px;
 }

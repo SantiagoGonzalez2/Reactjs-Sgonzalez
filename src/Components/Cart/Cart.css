@@ -103,6 +103,7 @@
    margin-left: 83%;
 
     position: fixed;
+    margin-top: 32vh;
   
    
     width: 250px;
@@ -120,7 +121,7 @@
     bottom: 0;
     margin-bottom: 130px;
     width: 250px;
-    height: 50px;
+    height: 80px;
     background-color: #430002;
     color: white;
     border-style: none;
@@ -148,4 +149,5 @@
 #imgCart{
     width: 50vh;
     border-radius: 10px;
+    
 }

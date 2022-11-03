@@ -29,7 +29,7 @@ const alert = () =>{
    return( 
       <div>
       <h1>el carro esta vacio</h1>
-      <Link className="cartGo" to={'/'}>Tienda </Link>
+      <Link className="cartGo" to={'/products'}>Tienda </Link>
       </div>
    )
   }
