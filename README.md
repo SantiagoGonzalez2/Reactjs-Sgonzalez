@@ -15,9 +15,15 @@ To start the project it is necessary [Node.js](https://nodejs.org/).
 Install the dependencies and devDependencies and start the server.
 
 $ git clone https://github.com/SantiagoGonzalez2/Reactjs-Sgonzalez
-cd Reactjs-Sgonzalez
-npm install
-npm start
+cd Reactjs-Sgonzalez  
+
+
+
+npm install  
+  
+
+npm start  
+
 
 
 #### Database
